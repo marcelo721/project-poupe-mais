@@ -1,0 +1,118 @@
+body {
+  background-color: var(--main-green);
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 32px;
+}
+
+body .form-section {
+  width: 45%;
+  display: flex;
+  justify-content: end;
+}
+
+body main {
+  background-color: var(--white);
+  width: 368px;
+  height: 368px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+} 
+
+body main .logo-poupe-mais {
+  width: 107px;
+  height: 32px;
+}
+
+body main h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--gray-text);
+}
+
+body main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+body main form .input-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+body .form-input {
+  background-color: var(--mint);
+  border: none;
+
+  width: 242px;
+  height: 32px;
+  padding-left: 10px;
+
+  border-radius: 4px;
+}
+
+body .form-input::placeholder {
+  color: var(--gray-text);
+
+  font-weight: 300;
+  font-size: 16px;
+}
+
+body main button {
+  background-color: var(--secondary-green);
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+
+  width: 178px;
+  height: 44px;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+body main .error-message {
+  font-size: 10px;
+ color: var(--red);
+}
+
+body button:hover {
+  cursor: pointer;
+}
+
+body .ilustration-section {
+  width: 65%;
+  height: 100%;
+  background-image: url('../assets/Ilustração.svg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; 
+  /* Do not repeat the image */
+  background-size: cover; 
+
+  position: relative;
+}
+
+body .ilustration-section img{
+  position: absolute;
+  bottom: 55px;
+  right: 51px;
+}
+

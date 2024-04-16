@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/dashboard.css" />
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- Dialogs -->
+  <dialog id="income-modal">
+    <main>
+      <span>
+        <img src="assets/income-icon.png" />
+      </span>
+
+      <form id="add-income-form" class="add-form">
+        <p class="common-text">Adicione um saldo</p>
+        <input id="income-value" class="input" placeholder="R$" type="number" />
+        <input id="income-description" class="input" placeholder="Descrição" type="text" />
+        <button class="confirm-button">
+          <p>
+            Confirmar
+          </p>
+          <img src="assets/send-icon.png" />
+        </button>
+      </form>
+    </main>
+  </dialog>
+
+  <dialog id="expense-modal">
+    <main>
+      <span>
+        <img src="assets/outcome-icon.png" />
+      </span>
+
+      <form id="add-expense-form" class="add-form">
+        <p class="common-text">Adicione um saldo</p>
+        <input id="expense-value" class="input" placeholder="R$" type="number" />
+        <select id="category-select" class="input" placeholder="Categoria" type="text"></select>
+        <input id="expense-description" class="input" placeholder="Descrição" type="text" />
+        <button class="confirm-button">
+          <p>
+            Confirmar
+          </p>
+          <img src="assets/send-icon.png" />
+        </button>
+      </form>
+    </main>
+  </dialog>
+
+  <!-- Header -->
+  <header>
+    <img id="logo-ux" src="assets/ux-logo.svg" alt="Logo UX">
+
+    <img id="logo-poupe-mais" src="assets/logo-02.svg" alt="Logo Poupe Mais">
+
+    <img id="logout-btn" src="assets/logout.svg" alt="Ícone de Logout">
+  </header>
+
+  <!-- Main Content -->
+  <main id="principal">
+    <section class="box fincancial-summary-section">
+      <section class="greetings">
+        <img src="assets/user-image.png">
+        <div>
+          <p class="common-text">Boa tarde</p>
+          <h1 id="username"></h1>
+        </div>
+      </section>
+
+      <section class="income-outcome">
+        <div>
+          <p class="common-text">Receita mensal</p>
+          <p id="total-incomes"></p>
+        </div>
+        <div>
+          <p class="common-text">Despesa mensal</p>
+          <p id="total-expense"></p>
+        </div>
+      </section>
+
+      <section class="overwall-balance">
+        <p class="common-text">Saldo geral</p>
+        <h1 id="monthly-income"></h1>
+      </section>
+    </section>
+
+    <section class="expense-management">
+      <section class="subarea">
+        <section class="container-section quick-access">
+          <h3 class="common-text">Acesso rápido</h3>
+          <ul class="access">
+            <li>
+              <button id="show-income-modal" class="access-01"><img src="assets/income-icon.png" /></button>
+            </li>
+            <li>
+              <button id="show-expense-modal" class="access-02"><img src="assets/outcome-icon.png" /></button>
+            </li>
+            <li>
+              <button id="show-settings-modal" class="access-03"><img src="assets/settings-icon.png" /></button>
+            </li>
+            <li>
+              <button id="show-chart-modal" class="access-04"><img src="assets/line-chart-icon.png" /></button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="container-section biggest-expenses-month">
+          <h3 class="common-text">Gastos do mês</h3>
+
+          <ul id="biggest-expenses"></ul>
+        </section>
+      </section>
+
+      <section class="container-section spending-categories">
+        <h3 class="common-text">Categorias de gastos</h3>
+        <ul class="categories"></ul>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span>UX DESIGN - SECS 2024</span>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+  <script src="js/modals.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: 'Poppins', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	--main-green: #5BBA6F;
+	--main-dash: #E8FFED;
+    --main-color-10: rgba(91, 186, 111, 0.1);
+	--white: #FFFFFF;
+	--gray-text: #C4C4C4;
+	--mint: #F2FFF5;
+	--secondary-green: #3FA34D;
+	--secondary-dark-color: #054A29;
+	--red: #FF0000;
+
+	--red-color: #BA5B5B;
+    --red-light-color: #DB9D9D;
+    --green: #00FF00;
+    --green-light-color: #98DDA6;
+    --blue-light-color: #92BADF;
+
+    --gray-color: #D2D2D2;
+    --btn-gray-color: #EEFAF1;
+    --category-color: #E3F8E8;
+    --border-gray-color: #CFDFD1;
+
+	--placeholder-color: #E4E4E4;
+    --backdrop-color: #EDEDAA;
+
+    --text-color: #858585;
+    --text-light-color: #A6A6A6;
+
+	/* font-sizes */
+    --heading-1: 2rem;
+    --heading-2: 1.125rem;
+    --common-text: 1rem;
+}
